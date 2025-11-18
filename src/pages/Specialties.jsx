@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { ChevronDownIcon, UserIcon } from '@heroicons/react/24/outline'
 import { specialtiesData } from '../data/specialties'
 import SearchIcon from '@mui/icons-material/Search'
@@ -153,9 +154,9 @@ const Specialties = () => {
               Vení sin turno previo. Te atendemos por orden de llegada.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <a href="/contacto" className="btn-primary">
+              <Link to="/contacto" className="btn-primary">
                 Solicitar Información
-              </a>
+              </Link>
               <a href="https://wa.me/5491167198335" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold rounded-full hover:scale-105 transition-transform shadow-lg">
                 <WhatsAppIcon />
                 WhatsApp

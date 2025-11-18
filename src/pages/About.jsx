@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import {
   HeartIcon,
   SparklesIcon,
@@ -177,12 +178,12 @@ const About = () => {
               Conocé todas nuestras especialidades médicas y encontrá la atención que necesitás
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <a href="/especialidades" className="px-8 py-4 bg-white text-cobalto font-bold rounded-full hover:scale-105 transition-transform shadow-xl">
+              <Link to="/especialidades" className="px-8 py-4 bg-white text-cobalto font-bold rounded-full hover:scale-105 transition-transform shadow-xl">
                 Ver Especialidades
-              </a>
-              <a href="/contacto" className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-cobalto transition-all">
+              </Link>
+              <Link to="/contacto" className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-cobalto transition-all">
                 Contactanos
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>

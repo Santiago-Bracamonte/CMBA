@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { 
   ClockIcon, 
   MapPinIcon, 
@@ -116,12 +117,12 @@ const Home = () => {
               transition={{ delay: 0.4 }}
               className="flex flex-wrap gap-4 justify-center"
             >
-              <a href="/especialidades" className="btn-primary">
+              <Link to="/especialidades" className="btn-primary">
                 Ver Especialidades
-              </a>
-              <a href="/contacto" className="btn-secondary border-white text-white hover:bg-white hover:text-cobalto">
+              </Link>
+              <Link to="/contacto" className="btn-secondary border-white text-white hover:bg-white hover:text-cobalto">
                 Contactanos
-              </a>
+              </Link>
             </motion.div>
           </div>
         </div>
